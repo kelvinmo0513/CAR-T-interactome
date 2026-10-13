@@ -1,0 +1,13 @@
+# Local data and generated analyses must stay outside this public checkout.
+__pycache__/
+*.py[cod]
+.Rhistory
+.RData
+.DS_Store
+/inputs/
+/outputs/
+/external_inputs/
+/local_data/
+*.rds
+*.RDS
+*_LOCAL_ONLY.*

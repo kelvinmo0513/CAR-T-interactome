@@ -1,0 +1,8 @@
+# Python 3.13.7 test environment for the public module, verified 2026-10-13.
+# The source deconvolution audit also records these NumPy/pandas/SciPy versions.
+# statsmodels/openpyxl pins are from the current module validation environment.
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.16.2
+statsmodels==0.14.5
+openpyxl==3.1.5

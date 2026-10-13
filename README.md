@@ -38,6 +38,30 @@ CAR-T-interactome/
 ├── figures/                 # Figure generation scripts
 └── README.md
 ```
+
+## Current manuscript validation workflow
+
+The [2026 manuscript validation guide](docs/manuscript_2026/README.md) documents the
+LymphoMAP CAR-T analyses and the Cologne bulk deconvolution addition. Its portable
+workflow reproduces four LymphoMAP EFS Kaplan–Meier plots, the selected four-cohort
+durability meta-analysis and the preserved three-cohort chemotherapy OS forest.
+It uses the approved total-mixture/cell-fraction definitions and recorded CIBERSORTx
+outputs; it does not submit service jobs.
+
+```sh
+python3 src/validation/manuscript_2026/stage_inputs.py \
+  --bundle /path/to/extracted/Reproducibility_20261007 \
+  --output-dir /path/to/external_inputs
+python3 src/validation/manuscript_2026/run.py \
+  --input-dir /path/to/external_inputs \
+  --output-dir /path/to/new_results
+```
+
+Install the [documented dependencies](docs/manuscript_2026/DEPENDENCIES.md) first.
+The extracted input bundle is available from the study authors; it is not included
+in this public repository. See [provenance and input access](docs/manuscript_2026/PROVENANCE.md).
+The existing R Markdown scripts and figure examples remain available as historical
+workflows; they do not, by themselves, reproduce the selected 2026 additions.
   
 ## Dataset
 
@@ -52,16 +76,20 @@ CAR-T-interactome/
 - **Platform**: 10X Genomics 5' Immune Profiling with Feature Barcoding
 
 ### Validation Cohorts
-- **Total samples**: 785 baseline LBCL samples across 6 independent cohorts
-- **Treatment contexts**: 
-  - CAR T therapy (ZUMA-1, ZUMA-7, Axi-cel)
-  - Chemoimmunotherapy (CHOP I, CHOP II, R-CHOP)
-- **Data types**: Bulk RNA-seq, microarray, NanoString
+- **Nine treatment-defined cohorts**: CHOP I, CHOP II, R-CHOP I, Axi-cel/Moffitt,
+  ZUMA-1, ZUMA-7 CAR-T, LymphoMAP CAR-T, Cologne and ZUMA-7 standard of care
+  (labeled HDT-ASCT in the figures).
+- **Data types**: Bulk RNA-seq, microarray, NanoString and single-nucleus RNA-seq.
+- **Counts and endpoints**: Available profiles, baseline specimens and
+  endpoint-evaluable patients are different populations. The
+  [cohort table](docs/manuscript_2026/COHORTS.md) gives accession-specific counts,
+  exclusions, treatments and the analyses to which each cohort contributes.
+  The nine treatment-defined rows are not nine independent accession series.
 
 ## Installation
 ```bash
 # Clone the repository
-git clone https://github.com/zinagoodlab/CAR-T-interactome.git
+git clone https://github.com/kelvinmo0513/CAR-T-interactome.git
 cd CAR-T-interactome
 ```
 
@@ -110,14 +138,27 @@ Major cell types analyzed:
 - **GEO Accession**: GSE182436
 - **Used for**: CIBERSORTx deconvolution of baseline samples
 
+The public EcoTyper source is distinct from the study's annotated Seurat object
+and exact CIBERSORTx upload files. Those inputs remain external to this code
+repository. [Reference provenance and access](docs/manuscript_2026/PROVENANCE.md)
+and the [CIBERSORTx execution record](docs/manuscript_2026/CIBERSORTx.md) describe
+the selected Cologne workflow, including its exploratory two-cell reference.
+
 ### Validation Cohorts (Publicly Available)
-- **TCGA**: https://cancergenome.nih.gov
-- **GEO Accessions**: 
-  - GSE197977 (n=63)
-  - GSE153439 (n=74)
-  - GSE34171 (n=36)
-  - GSE10846 (n=263)
-  - GSE248835 (n=414, n=256)
+- **GSE34171**: CHOP I; 176 expression profiles, 129 OS-evaluable patients.
+- **GSE10846**: CHOP II (181) and R-CHOP I (233), analyzed separately in the OS forest.
+- **GSE153439**: Axi-cel/Moffitt; 36 expression profiles, 35 response-evaluable patients.
+- **GSE197977**: ZUMA-1; 74 expression profiles, 58 baseline samples and 57 with known
+  best response; the manuscript CR/PD boxplots use 40 patients.
+- **GSE248835**: ZUMA-7; 134 CAR-T and 122 standard-of-care screening specimens with EFS.
+- **LymphoMAP**: [CELLxGENE collection 4429f25e-5c91-4981-9cf2-6a1044c36732](https://cellxgene.cziscience.com/collections/4429f25e-5c91-4981-9cf2-6a1044c36732);
+  22 eligible CAR-T patients; clinical annotations in Li et al. supplementary Table S1B.
+- **Cologne**: [Zenodo 10.5281/zenodo.15280550](https://doi.org/10.5281/zenodo.15280550);
+  24 bulk samples, 22 response-evaluable patients; clinical annotations in Stahl et al.
+
+See the [full cohort table](docs/manuscript_2026/COHORTS.md) for source studies,
+analysis-specific counts and endpoint definitions. Public source access does not
+imply that all processed study inputs are deposited in this repository.
 
 ### Clinical Trial Data
 - **ZUMA-1**: Provided by Kite Pharma (NCT02348216)
