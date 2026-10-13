@@ -1,0 +1,224 @@
+{
+  "format_version": 1,
+  "source_release": "Reproducibility_20261007",
+  "scope": "External authorized inputs; this manifest does not grant redistribution rights.",
+  "files": [
+    {
+      "file": "Li_Table_S1.xlsx",
+      "source_path": "analysis/base_total_mixture/source_data/Li_Table_S1.xlsx",
+      "group": "analysis",
+      "bytes": 87711,
+      "sha256": "2178fd0984b8c5418e856c4b6f11e2f1b58f54b1d347f3d501cbfea65a64f4d1"
+    },
+    {
+      "file": "li_cell_annotations.csv.gz",
+      "source_path": "analysis/base_total_mixture/source_data/li_cell_annotations.csv.gz",
+      "group": "analysis",
+      "bytes": 829323,
+      "sha256": "e2b6938f9857ab559a827bd973aeed39391293bd7cc9e5b1daf619ca56ef832e"
+    },
+    {
+      "file": "li_myeloid_gates.csv.gz",
+      "source_path": "analysis/base_total_mixture/source_data/li_myeloid_gates.csv.gz",
+      "group": "analysis",
+      "bytes": 38711,
+      "sha256": "3cc83d7ec0d6155215a71e221063018fa07d50722913859affbd458925ccf15b"
+    },
+    {
+      "file": "li_all_biopsy_counts.csv",
+      "source_path": "analysis/base_total_mixture/source_data/li_all_biopsy_counts.csv",
+      "group": "analysis",
+      "bytes": 193624,
+      "sha256": "f55e589a9e97ac0b67e5c482e5eed87e423dfe9358d0dca16cec8af341585812"
+    },
+    {
+      "file": "li_total_cell_counts.csv",
+      "source_path": "analysis/base_total_mixture/source_data/li_total_cell_counts.csv",
+      "group": "analysis",
+      "bytes": 4020,
+      "sha256": "85775d3fb86dd554fc7c98a9c5fb0787e2a0618fb71e69da99bf546831473705"
+    },
+    {
+      "file": "stahl_clinical.csv",
+      "source_path": "analysis/base_total_mixture/source_data/stahl_clinical.csv",
+      "group": "analysis",
+      "bytes": 2762,
+      "sha256": "cbc66c1848027c88c697abbc6c4558479ed9d9f07d757b05933b0029783879ee"
+    },
+    {
+      "file": "kelvin_monti_fractions.tsv",
+      "source_path": "analysis/base_total_mixture/source_data/kelvin_monti_fractions.tsv",
+      "group": "analysis",
+      "bytes": 21326,
+      "sha256": "007bf761ac56a94f17b39015d8d099a47ed10161f4190aede745a9b6d4a24d5f"
+    },
+    {
+      "file": "monti_clinical.tsv",
+      "source_path": "analysis/base_total_mixture/source_data/monti_clinical.tsv",
+      "group": "analysis",
+      "bytes": 16288,
+      "sha256": "f513f0fdfb33b8557970534fdb67ed601c0dbf01e0d20539f514b80d77d40efc"
+    },
+    {
+      "file": "kelvin_chop_fractions.tsv",
+      "source_path": "analysis/base_total_mixture/source_data/kelvin_chop_fractions.tsv",
+      "group": "analysis",
+      "bytes": 21330,
+      "sha256": "5ebed304479288d89e9c64506c5f6c30c317b68595cf5b4b9ae7f06e0855bdb6"
+    },
+    {
+      "file": "chop_clinical.tsv",
+      "source_path": "analysis/base_total_mixture/source_data/chop_clinical.tsv",
+      "group": "analysis",
+      "bytes": 25566,
+      "sha256": "3e0c1db3cd689137667a7149b0c2739ee871a550a11e7ba0edef60694b549a7d"
+    },
+    {
+      "file": "kelvin_rchop_fractions.tsv",
+      "source_path": "analysis/base_total_mixture/source_data/kelvin_rchop_fractions.tsv",
+      "group": "analysis",
+      "bytes": 27713,
+      "sha256": "c7e7cf5791444879b216a7749406c156275e9f08a0e66a3175d46b1a318b1ddf"
+    },
+    {
+      "file": "rchop_clinical.tsv",
+      "source_path": "analysis/base_total_mixture/source_data/rchop_clinical.tsv",
+      "group": "analysis",
+      "bytes": 38335,
+      "sha256": "e2d57d87b49f168515be63a33393661de8a39670ffee7ba12b4f5cd52432bbad"
+    },
+    {
+      "file": "kelvin_moffitt_fractions.tsv",
+      "source_path": "analysis/base_total_mixture/source_data/kelvin_moffitt_fractions.tsv",
+      "group": "analysis",
+      "bytes": 4219,
+      "sha256": "11b7087413d43f2f87e30a68a905cb1d7f4202410ae40a2fd7c2f9bb76834538"
+    },
+    {
+      "file": "moffitt_clinical.csv",
+      "source_path": "analysis/base_total_mixture/source_data/moffitt_clinical.csv",
+      "group": "analysis",
+      "bytes": 45965,
+      "sha256": "04378765b908e703420ebe39b8bffef323aa9771fa29678288ca774c211f0952"
+    },
+    {
+      "file": "kelvin_zuma7_fractions.tsv",
+      "source_path": "analysis/base_total_mixture/source_data/kelvin_zuma7_fractions.tsv",
+      "group": "analysis",
+      "bytes": 29608,
+      "sha256": "6d3797577aefd918edf6d7dadccb1486aed32863121c9b4ddc6d3c8564244d3e"
+    },
+    {
+      "file": "zuma7_clinical.csv",
+      "source_path": "analysis/base_total_mixture/source_data/zuma7_clinical.csv",
+      "group": "analysis",
+      "bytes": 312939,
+      "sha256": "80172b0e102f51d980dc066d5f08ab709de4649fc7fb48c34bbbd1e376659a8c"
+    },
+    {
+      "file": "AND_oversampled_scores.tsv",
+      "source_path": "analysis/selected_Figure5f/AND_oversampled_scores.tsv",
+      "group": "analysis",
+      "bytes": 3573,
+      "sha256": "067319fc7083c47ced2ace740fd9f66000bd8b7b3410786ae0a7c2d5c84f5d0a"
+    },
+    {
+      "file": "reference/annotated_ecotyper.rds",
+      "source_path": "reference/LymphomaEcotyper_scRNAseq_Tregs.rds",
+      "group": "reference",
+      "bytes": 662599242,
+      "sha256": "0a72fe15f6487e822d1f7b846fc90a176511220f85d553edeb7717f4cd3e73e1"
+    },
+    {
+      "file": "reference/selected_cells_LOCAL_ONLY.csv",
+      "source_path": "reference/frozen_AND_reference/selected_cells_LOCAL_ONLY.csv",
+      "group": "reference",
+      "bytes": 203589,
+      "sha256": "26ea39b2fe397551f98a225a0ed277104b43e50d9e95a5c78ea5ed189f7c3cb8"
+    },
+    {
+      "file": "reference/frozen_AND_reference.txt",
+      "source_path": "reference/frozen_AND_reference/Kelvin_DP_SCT_reference.txt",
+      "group": "reference",
+      "bytes": 259704020,
+      "sha256": "2cad4990b056751cfa56857164e47b4886ed00fd28b06651d75d41a1f925c06d"
+    },
+    {
+      "file": "reference/oversampled_AND_reference.txt",
+      "source_path": "deconvolution/selected_AND_jobs34_35/inputs/reference/AND_2cell_oversampled10x_exploratory.txt",
+      "group": "reference",
+      "bytes": 261008750,
+      "sha256": "db37330fe9082caac34e4a4143d3d1139fa637ed0cb5d5a64c232bf1da7b88f3"
+    },
+    {
+      "file": "reference/column_mapping_LOCAL_ONLY.csv",
+      "source_path": "deconvolution/selected_AND_jobs34_35/inputs/reference/column_mapping_LOCAL_ONLY.csv",
+      "group": "reference",
+      "bytes": 436828,
+      "sha256": "700a5050583d5c911a257e9c1ae7d0981924dfe637ff11d29c0061c9b0b755cb"
+    },
+    {
+      "file": "cologne/Stahl_24_CPM.tsv",
+      "source_path": "deconvolution/selected_AND_jobs34_35/inputs/Stahl_24_CPM.tsv",
+      "group": "reference",
+      "bytes": 5554012,
+      "sha256": "db2f31fa56ac56132ba0444d6f2a695da9c93ea755c9c87d068d02815b2730e6"
+    },
+    {
+      "file": "cologne/job34_signature.tsv",
+      "source_path": "deconvolution/selected_AND_jobs34_35/service_results/job34/CIBERSORTx_Job34_AND_2cell_oversampled10x_exploratory_inferred_phenoclasses.CIBERSORTx_Job34_AND_2cell_oversampled10x_exploratory_inferred_refsample.bm.K999.txt",
+      "group": "reference",
+      "bytes": 78934,
+      "sha256": "5cdc0df613c3fa0c7ca31ac733ca8fca479eb6c226d8fd2922da36abf135fa8c"
+    },
+    {
+      "file": "cologne/job34_classes.tsv",
+      "source_path": "deconvolution/selected_AND_jobs34_35/service_results/job34/CIBERSORTx_Job34_AND_2cell_oversampled10x_exploratory_inferred_phenoclasses.txt",
+      "group": "reference",
+      "bytes": 306,
+      "sha256": "8372911535b9de8d0cd682e8ed1d1a055772f9a65efcc8da27fa1e310562cb13"
+    },
+    {
+      "file": "cologne/job34_profiles.tsv",
+      "source_path": "deconvolution/selected_AND_jobs34_35/service_results/job34/CIBERSORTx_Job34_AND_2cell_oversampled10x_exploratory_inferred_refsample.txt",
+      "group": "reference",
+      "bytes": 2449878,
+      "sha256": "9f0f792885c7e325abd441f0e57edfab664aaaf32b20e564bda07cdd30193cc4"
+    },
+    {
+      "file": "cologne/job35_scores.tsv",
+      "source_path": "deconvolution/selected_AND_jobs34_35/service_results/job35/CIBERSORTx_Job35_Adjusted.txt",
+      "group": "reference",
+      "bytes": 3573,
+      "sha256": "067319fc7083c47ced2ace740fd9f66000bd8b7b3410786ae0a7c2d5c84f5d0a"
+    },
+    {
+      "file": "cologne/job34_runtime_log.txt",
+      "source_path": "deconvolution/selected_AND_jobs34_35/service_results/job34/CIBERSORTx_Job34_runtime_log.txt",
+      "group": "reference",
+      "bytes": 1593,
+      "sha256": "8628d7a24c569a88f1f1fd5371be331790bed106b72d597be5a129c82916af40"
+    },
+    {
+      "file": "cologne/job35_runtime_log.txt",
+      "source_path": "deconvolution/selected_AND_jobs34_35/service_results/job35/CIBERSORTx_Job35_runtime_log.txt",
+      "group": "reference",
+      "bytes": 8652,
+      "sha256": "de702e4547bc13b73cc3248ef47986ff46948cb081c3b22fbcc772f31c41d73e"
+    },
+    {
+      "file": "cologne/job34_error_log.txt",
+      "source_path": "deconvolution/selected_AND_jobs34_35/service_results/job34/CIBERSORTx_Job34_error_log.txt",
+      "group": "reference",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "cologne/job35_error_log.txt",
+      "source_path": "deconvolution/selected_AND_jobs34_35/service_results/job35/CIBERSORTx_Job35_error_log.txt",
+      "group": "reference",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "KM_statistics": [
+    {
+      "cohort": "li_cart",
+      "marker": "CCL8",
+      "endpoint": "EFS",
+      "n": 22,
+      "events": 14,
+      "high_n": 11,
+      "low_n": 11,
+      "median_fraction": 0.001213283862925,
+      "ties_at_median": 0,
+      "beta": 1.05034697608368,
+      "se": 0.577289548695028,
+      "HR": 2.85864282669628,
+      "CI_low": 0.92208326719694,
+      "CI_high": 8.86236536475048,
+      "cox_p": 0.068843462803731,
+      "logrank_chisq": 3.57165882162187,
+      "logrank_p": 0.058773571850442,
+      "estimable": true,
+      "logrank_q_BH4": 0.078364762467256
+    },
+    {
+      "cohort": "li_cart",
+      "marker": "CCL13",
+      "endpoint": "EFS",
+      "n": 22,
+      "events": 14,
+      "high_n": 9,
+      "low_n": 13,
+      "median_fraction": 0.0,
+      "ties_at_median": 13,
+      "beta": 1.62241640129718,
+      "se": 0.634517877973057,
+      "HR": 5.06531537493452,
+      "CI_low": 1.46050784301932,
+      "CI_high": 17.5674646118341,
+      "cox_p": 0.010560113341996,
+      "logrank_chisq": 7.81190019168173,
+      "logrank_p": 0.005190329968813,
+      "estimable": true,
+      "logrank_q_BH4": 0.020761319875251
+    },
+    {
+      "cohort": "li_cart",
+      "marker": "CCL8_CCL13",
+      "endpoint": "EFS",
+      "n": 22,
+      "events": 14,
+      "high_n": 7,
+      "low_n": 15,
+      "median_fraction": 0.0,
+      "ties_at_median": 15,
+      "beta": 1.17639395296676,
+      "se": 0.590501319007191,
+      "HR": 3.2426599102893,
+      "CI_low": 1.01921491004039,
+      "CI_high": 10.3166105501544,
+      "cox_p": 0.046349633619744,
+      "logrank_chisq": 4.41102821278328,
+      "logrank_p": 0.03570731244103,
+      "estimable": true,
+      "logrank_q_BH4": 0.071414624882061
+    },
+    {
+      "cohort": "li_cart",
+      "marker": "CCL18",
+      "endpoint": "EFS",
+      "n": 22,
+      "events": 14,
+      "high_n": 11,
+      "low_n": 11,
+      "median_fraction": 0.004711409632607,
+      "ties_at_median": 0,
+      "beta": 0.462689931835762,
+      "se": 0.562234566177745,
+      "HR": 1.58834077214744,
+      "CI_low": 0.527677715612151,
+      "CI_high": 4.78099857891335,
+      "cox_p": 0.410537443424305,
+      "logrank_chisq": 0.67203030419836,
+      "logrank_p": 0.412344644946246,
+      "estimable": true,
+      "logrank_q_BH4": 0.412344644946246
+    }
+  ],
+  "km_curves": {
+    "columns": [
+      "cohort",
+      "marker",
+      "group",
+      "time",
+      "survival",
+      "lower",
+      "upper",
+      "n_risk",
+      "n_event",
+      "n_censor"
+    ],
+    "rows": 85,
+    "sha256": "72338b54fda2467adc71b880fdf3f107216d38766de48792cb3b09acc5d3d310"
+  },
+  "risk_tables": {
+    "columns": [
+      "cohort",
+      "marker",
+      "group",
+      "time",
+      "n_risk"
+    ],
+    "rows": 32,
+    "sha256": "6eb5ee7ef56c476a2cd33eedee613aa4b9f5d6db7c228f00e5ed4adc7fe7d9db"
+  },
+  "response_models": [
+    {
+      "cohort": "moffitt",
+      "n": 35,
+      "beta": 0.935351853252938,
+      "se": 0.557350923974925,
+      "weight_percent": 17.5240288557255
+    },
+    {
+      "cohort": "zuma7",
+      "n": 134,
+      "beta": 0.285505365602986,
+      "se": 0.289497253483909,
+      "weight_percent": 64.9534935603327
+    },
+    {
+      "cohort": "stahl",
+      "n": 22,
+      "beta": 0.214496665195684,
+      "se": 0.785582959266163,
+      "weight_percent": 8.82078632882776
+    },
+    {
+      "cohort": "li_cart",
+      "n": 22,
+      "beta": 1.15965214274047,
+      "se": 0.790940602250099,
+      "weight_percent": 8.70169125511405
+    }
+  ],
+  "chemo_models": [
+    {
+      "cohort": "monti",
+      "n": 129,
+      "joined_before_endpoint_omission": 176,
+      "IQR": 0.021740498305443,
+      "beta": 0.409646260609111,
+      "se": 0.1752401550969,
+      "CI_low": 0.066181867973974,
+      "CI_high": 0.753110653244249
+    },
+    {
+      "cohort": "rchop",
+      "n": 233,
+      "joined_before_endpoint_omission": 233,
+      "IQR": 0.025205319392065,
+      "beta": 0.581561188025862,
+      "se": 0.186536665290466,
+      "CI_low": 0.215956042260346,
+      "CI_high": 0.947166333791378
+    },
+    {
+      "cohort": "chop",
+      "n": 181,
+      "joined_before_endpoint_omission": 181,
+      "IQR": 0.035764025104377,
+      "beta": 0.255416753522807,
+      "se": 0.133575580482728,
+      "CI_low": -0.006386573437372,
+      "CI_high": 0.517220080482986
+    }
+  ],
+  "chemo_pool": {
+    "beta": 0.381610838247257,
+    "se": 0.097064615238971,
+    "CI_low": 0.191367688205635,
+    "CI_high": 0.571853988288878,
+    "p": 8.4412780228e-05,
+    "I2": 8.47614587470678,
+    "tau2": 0.002485993950751,
+    "n": 543
+  },
+  "response_pool": {
+    "analysis": "oversampled_two_cell_AND_exploratory",
+    "k": 4,
+    "n": 213,
+    "beta": 0.46918667954191,
+    "se": 0.233316635561587,
+    "ratio": 1.59869341425397,
+    "CI_low": 1.01196549744182,
+    "CI_high": 2.52560056567141,
+    "p": 0.044331376102698,
+    "tau2": 0.0,
+    "I2": 0.0
+  }
+}
